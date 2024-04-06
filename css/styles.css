@@ -478,9 +478,6 @@ img {
     display: flex;
     gap: 24px;
 }
-.subscribe-form-label {
-
-}
 .subscribe-email {
     width: 264px; height:40px;
     border: 1px solid #ffffff;
@@ -709,6 +706,9 @@ img {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    .header-inline {
+        width: 100%;
+    }
     .nav-ul {
         display: none;
     }
@@ -741,6 +741,9 @@ img {
 
     .section {
         padding: 96px 0;
+    }
+    .section-h {
+        margin: 0 52px 72px;
     }
     .advantages {
         padding: 96px 0;
@@ -775,25 +778,57 @@ img {
     .our-portfolio-li {
         width: 360px;
     }
-
+    .our-portfolio-h{
+        text-align: start;
+    }
+    .our-portfolio-p {
+        text-align: start;
+    }
     .footer {
-        padding: 137px 16px;
+        padding: 96px 16px;
     }
     .footer-div {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: normal;
     }
+    .logo {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
     .footer-logo-and-p {
         margin: 0;
-        width:80%;
+        width: calc(100% -32px);
     }
     .footer-p {
         max-width: 100%;
     }
-    .logo {
+    
+    .footer-div-p {
         text-align: center;
+        margin: 72px 0 16px;
+    }
+    .footer-div-ul {
+        justify-content: center;
+    }
+    .subscribe-div {
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe-div-p {
+        margin: 72px 0 16px;
+    }
+    .subscribe-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .subscribe-button{
+        width: 165px;
+        align-self: center;
     }
 }
 @media (min-width: 768px) and (max-width: 1158px) {
