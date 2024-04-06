@@ -38,6 +38,7 @@ img {
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
+    justify-content: space-between;
 }
 .navigation {
     display: flex;
@@ -138,6 +139,9 @@ img {
 .address-li-a:focus {
     color: #404bbf;
 }
+.menu-open {
+    display: none;
+}
 
 .section {
     max-width: 1440px;
@@ -197,7 +201,7 @@ img {
     list-style-type: none;
     display: block;
     padding: 12px;
-    flex-basis: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4);
 }
 .advantages-li-div {
     display: flex;
@@ -704,10 +708,94 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-    
-}
+@media (min-width: 320px) and (max-width: 767px) {
+    .nav-ul {
+        display: none;
+    }
+    .address {
+        display: none;
+    }
+    .menu-open {
+        align-self: flex-end;
+        display: block;
+        width: 17px;
+        height: 2px;
+        background-color: #2F2F37;
+        margin: 26px;
+        position: relative;
+    }
+    .menu-open::before,
+    .menu-open::after {
+        content: '';
+        position: absolute;
+        width: 17px;
+        height: 2px;
+        background-color: #2F2F37;
+    }
+    .menu-open::after {
+        top: -5px;
+    }
+    .menu-open::before {
+        top: 5px;
+    }
 
+    .section {
+        padding: 96px 0;
+    }
+    .advantages {
+        padding: 96px 0;
+    }
+    .advantages-li-div {
+        display: none;
+    }
+    .advantages-ul{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .advantages-li {
+        width: 100%;
+        padding: 12px 16px;
+    }
+    .advantages-li-h{
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .advantages-p {
+        font-weight: 500;
+    }
+
+    .our-team-ul {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .our-portfolio-ul {
+        padding: 0;
+    }
+    .our-portfolio-li {
+        width: 360px;
+    }
+
+    .footer {
+        padding: 137px 16px;
+    }
+    .footer-div {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .footer-logo-and-p {
+        margin: 0;
+        width:80%;
+    }
+    .footer-p {
+        max-width: 100%;
+    }
+    .logo {
+        text-align: center;
+        margin: 0;
+    }
+}
 @media (min-width: 768px) and (max-width: 1158px) {
     .header-inline {
         padding: 0 16px;
@@ -721,6 +809,7 @@ img {
         gap: 6px;
         margin: 9px 0;
     }
+
     .section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
                                             rgba(46, 47, 66, 0.7)), 
@@ -739,6 +828,13 @@ img {
     }
     .advantages-li-div {
         display: none;
+    }
+    .advantages-li-h {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .advantages-p {
+        font-weight: 500;
     }
     .our-team-ul {
         flex-wrap: wrap;
@@ -778,5 +874,4 @@ img {
     .subscribe-div {
         margin-left: 0;
     }
-    
 }
