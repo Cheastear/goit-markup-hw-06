@@ -520,11 +520,19 @@ img {
     top: 0; left: 0;
     width: 100%;height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
+    z-index: 999;
 
     opacity: 0;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-menu {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
 }
 .is-open {
     opacity: 1;
@@ -705,6 +713,7 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 @media (min-width: 320px) and (max-width: 767px) {
     .header-inline {
         width: 100%;
@@ -829,6 +838,56 @@ img {
     .subscribe-button{
         width: 165px;
         align-self: center;
+    }
+
+    .modal-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+    }
+    .nav-ul-modal {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 72px 0;
+        padding-left: 16px;
+    }
+    .nav-li {
+        list-style-type: none;
+        padding: 20px 0;
+    }
+    .nav-li-a {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .nav-li-a-selected {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .nav-li-a-selected::after {
+        display: none;
+    }
+    .address-ul {
+        padding-left: 16px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .address-li-a {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0;
+    }
+    .our-team-li-social-network-ul-modal {
+        margin-top: 48px;
+        gap: 40px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
     }
 }
 @media (min-width: 768px) and (max-width: 1158px) {
