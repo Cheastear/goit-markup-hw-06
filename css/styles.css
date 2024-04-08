@@ -172,10 +172,10 @@ ul {
     width: 100%;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
                                         rgba(46, 47, 66, 0.7)), 
-                                        url(../images/section-1-background-mobile.jpg);
-    background-size: cover;
+                                        url(../images/section-1/section-1-background-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     color: #fff;
 }
 .section-h {
@@ -1043,41 +1043,41 @@ ul {
     }
 }
 @media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
-    .hero-wrapper {
-        background-image: linear-gradient(rgba(17, 17, 17, 0.4),
-                rgba(17, 17, 17, 0.4)),
-            url('../images/section-1-background-mobile-x2.jpg');
+    .section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url('../images/section-1/section-1-background-mobile-x2.jpg');
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .hero-wrapper {
-        background-image: linear-gradient(rgba(17, 17, 17, 0.4),
-                rgba(17, 17, 17, 0.4)),
-            url('../images/section-1-background-tabs.jpg');
+    .section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url('../images/section-1/section-1-background-tabs.jpg');
     }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    .hero-wrapper {
-        background-image: linear-gradient(rgba(17, 17, 17, 0.4),
-                rgba(17, 17, 17, 0.4)),
-            url('../images/section-1-background-tabs-x2.jpg');
+    .section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url('../images/section-1/section-1-background-tabs-x2.jpg');
     }
 }
 
 @media only screen and (min-width: 1158px) {
-    .hero-wrapper {
-        background-image: linear-gradient(rgba(17, 17, 17, 0.4),
-                rgba(17, 17, 17, 0.4)),
-            url('../images/section-1-background-desktop.jpg');
+    .section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url('../images/section-1/section-1-background-desktop.jpg');
     }
 }
 
 @media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
-    .hero-wrapper {
-        background-image: linear-gradient(rgba(17, 17, 17, 0.4),
-                rgba(17, 17, 17, 0.4)),
-            url('../images/section-1-background-desktop-x2.jpg');
+    .section {
+        background-image: linear-gradient(rrgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url('../images/section-1/section-1-background-desktop-x2.jpg');
     }
 }
