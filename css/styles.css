@@ -11,6 +11,16 @@ img {
     display: block;
 }
 
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -26,6 +36,8 @@ img {
 }
 
 .container {
+    width: 100%;
+    max-width: 1440px;
     padding: 0 16px;
     margin: 0;
 }
@@ -76,6 +88,7 @@ img {
 }
 
 .nav-li-a {
+    display: block;
     padding: 24px 0;
     color: #2E2F42;
     font-size: 16px;
@@ -92,6 +105,7 @@ img {
     color: #404bbf;
 }
 .nav-li-a-selected {
+    display: block;
     position: relative;
     color: #404bbf;
     padding: 24px 0;
@@ -115,6 +129,8 @@ img {
 
 .address {
     font-style: normal;
+    display: flex;
+    align-items: center;
 }
 .address-ul {
     display: flex;
@@ -359,7 +375,6 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     border-width: 0px, 1px, 1px, 1px;
-    border-style: solid;
     border-color: #E7E9FC;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
         0px 1px 1px rgba(46, 47, 66, 0.16), 
@@ -412,7 +427,7 @@ img {
 }
 
 .footer {
-    padding: 100px 156px;
+    padding: 100px 0;
     background-color: #2E2F42;
     color: #f4f4fd;
     display: flex;
@@ -764,7 +779,7 @@ img {
     }
 
     .section {
-        padding: 96px 0;
+        padding: 72px 0;
     }
     .section-h {
         margin: 0 auto 72px;
@@ -786,7 +801,6 @@ img {
     }
     .advantages-li {
         width: 100%;
-        padding: 12px 16px;
     }
     .advantages-li-h{
         text-align: center;
@@ -848,6 +862,9 @@ img {
     .footer-logo-and-p {
         margin: 0 0 72px;
         width: calc(100% -32px);
+    }
+    .logo-two {
+        margin-bottom: 16px;
     }
     .footer-p {
         max-width: 100%;
@@ -1014,6 +1031,10 @@ img {
     }
     .footer-logo-and-p {
         margin-right: 24px;
+        margin-bottom: 72px;
+    }
+    .logo-two {
+        margin-bottom: 16px;
     }
     .subscribe-div {
         margin-left: 0;
