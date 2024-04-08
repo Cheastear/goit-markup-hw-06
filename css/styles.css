@@ -1,4 +1,5 @@
 body {
+    overflow-x: hidden;
     margin: 0; padding: 0;
     font-family: Roboto, sans-serif;
     background-color: #ffffff;
@@ -24,12 +25,17 @@ img {
     fill: #f4f4fd;
 }
 
+.container {
+    padding: 0 16px;
+    margin: 0;
+}
+
 .header {
     box-shadow: 
         2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
-    background-color: #E7E9FC;
+    background-color: #ffffff;
     border-bottom: 1px solid #e7e9fc;
     width: 100%;
 }
@@ -113,6 +119,7 @@ img {
 .address-ul {
     display: flex;
     gap: 40px;
+    padding: 0;
 }
 .address-li {
     list-style-type: none;
@@ -125,7 +132,7 @@ img {
     font-weight: 200;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 0 20px;
+    padding: 0;
 }
 .address-li-a:first-child {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -365,6 +372,10 @@ img {
 }
 .our-portfolio-image:hover .our-portfolio-image-p {
     transform: translateY(0%);
+}
+.our-portfolio-img {
+    width: 360px;
+    height: 300px;
 }
 .our-portfolio-image-p {
     position: absolute;
@@ -756,7 +767,10 @@ img {
         padding: 96px 0;
     }
     .section-h {
-        margin: 0 52px 72px;
+        margin: 0 auto 72px;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 700;
     }
     .advantages {
         padding: 96px 0;
@@ -765,8 +779,10 @@ img {
         display: none;
     }
     .advantages-ul{
+        margin: 0;
         flex-wrap: wrap;
         padding: 0;
+        gap: 72px;
     }
     .advantages-li {
         width: 100%;
@@ -776,14 +792,27 @@ img {
         text-align: center;
         font-size: 36px;
         font-weight: 700;
+        margin: 0;
     }
     .advantages-p {
         font-weight: 500;
+        margin: 0;
     }
 
+    .our-team {
+        padding: 96px 0;
+    }
     .our-team-ul {
         padding: 0;
         flex-wrap: wrap;
+        gap: 72px;
+    }
+    .our-team-li-h, .our-team-li-p {
+        margin: 0;
+    }
+
+    .our-portfolio {
+        padding: 96px 0;
     }
     .our-portfolio-ul {
         padding: 0;
@@ -797,8 +826,13 @@ img {
     .our-portfolio-p {
         text-align: start;
     }
+    .our-portfolio-img {
+        width: 100%;
+        height: auto;
+    }
+
     .footer {
-        padding: 96px 16px;
+        padding: 96px 0;
     }
     .footer-div {
         flex-wrap: wrap;
@@ -811,16 +845,18 @@ img {
         margin: 0;
     }
     .footer-logo-and-p {
-        margin: 0;
+        margin: 0 0 72px;
         width: calc(100% -32px);
     }
     .footer-p {
         max-width: 100%;
     }
     
+    .footer-social {
+        margin-bottom: 72px;
+    }
     .footer-div-p {
         text-align: center;
-        margin: 72px 0 16px;
     }
     .footer-div-ul {
         justify-content: center;
@@ -830,9 +866,6 @@ img {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .subscribe-div-p {
-        margin: 72px 0 16px;
     }
     .subscribe-form {
         display: flex;
@@ -906,7 +939,7 @@ img {
         list-style-type: none;
     }
 }
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 768px) and (max-width: 1157px) {
     .header-inline {
         padding: 0 16px;
         width: 100%;
@@ -919,6 +952,9 @@ img {
         gap: 6px;
         margin: 9px 0;
     }
+    .address-li-a {
+        font-size: 12px;
+    }
 
     .section {
         padding: 112px 0;
@@ -928,7 +964,7 @@ img {
     }
     .advantages-ul {
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 72px 24px;
     }
     .advantages-li {
         flex-basis: calc((100% - 24px) / 2);
@@ -945,8 +981,8 @@ img {
     }
     .our-team-ul {
         flex-wrap: wrap;
-        gap: 12px;
-        padding: 0 96px;
+        gap: 64px 24px;
+        padding: 0 92px;
     }
     .our-team-li {
         flex-basis: calc((100% - 24px) / 2);
@@ -957,7 +993,7 @@ img {
     }
     .our-portfolio-ul {
         padding: 0;
-        gap: 12px;
+        gap: 72px 24px;
     }
     .our-portfolio-li {
         width: calc((100% - 24px) / 2);
