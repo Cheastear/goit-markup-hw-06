@@ -369,7 +369,7 @@ ul {
 .our-portfolio-h {
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
@@ -853,12 +853,6 @@ ul {
     .our-portfolio-li {
         width: 360px;
     }
-    .our-portfolio-h{
-        text-align: start;
-    }
-    .our-portfolio-p {
-        text-align: start;
-    }
     .our-portfolio-img {
         width: 100%;
         height: auto;
@@ -1039,13 +1033,6 @@ ul {
     }
     .our-portfolio-li {
         width: calc((100% - 24px) / 2);
-    }
-    .our-portfolio-h {
-        text-align: left;
-        font-weight: 500;
-    }
-    .our-portfolio-p {
-        text-align: left;
     }
     .footer {
         padding: 96px;
